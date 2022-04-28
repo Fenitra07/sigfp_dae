@@ -17,6 +17,7 @@ gris clair : #d8d7d7
 
 login.html ---------- OK
 index.html ---------- OK (tableau de bord)
-engagement_liste.html ----- 
+engagement_liste.html - OK
+engagement_detail.html - 
 referentiel.html ---- OK
 circulaire.html ----- OK

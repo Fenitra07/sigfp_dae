@@ -27,7 +27,6 @@
       <!--logo start-->
       <a href="index.html" class="logo"><b>SIGFP<span>/DAE</span></b></a>
       <!--logo end-->
-      
       <!--  notification start -->
       <div class="nav notify-row" id="top_menu">
         <ul class="nav top-menu">
@@ -40,7 +39,6 @@
         </ul>
       </div>
       <!--  notification end -->
-
       <div class="top-menu">
         <ul class="nav pull-right top-menu">
           <li><a class="logout" href="login.html"><i class="fa fa-power-off">  Déconnexion</i></a></li>
@@ -58,13 +56,13 @@
         <ul class="sidebar-menu" id="nav-accordion">
 
           <li class="mt">
-            <a class="active" href="">
+            <a href="index.html">
               <i class="fa fa-dashboard"></i>
               <span>Tableau de bord</span>
               </a>
           </li>
           <li class="">
-            <a class="" href="engagement_liste.html">
+            <a class="active" href="engagement_liste.html">
               <i class="fa fa-th-list"></i>
               <span>Listes autorisations</span>
               </a>
@@ -91,47 +89,63 @@
         *********************************************************************************************************************************************************** -->
     <!--main content start-->
     <section id="main-content">
-      <section class="wrapper site-min-height">
-        <h3><i class="fa fa-angle-right"></i> Tableau de bord</h3>
-        <!-- page start-->
-        <div id="morris">
-          <div class="row mt">
-            <div class="col-lg-6">
-              <div class="content-panel">
-                <h4><i class="fa fa-angle-right"></i> Etat VISA</h4>
-                <div class="panel-body">
-                  <div id="hero-donut" class="graph"></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="content-panel">
-                <h4><i class="fa fa-angle-right"></i> Etat Mensuel</h4>
-                <div class="panel-body">
-                  <div id="hero-graph" class="graph"></div>
-                </div>
-              </div>
-            </div>
+      <section class="wrapper">
+        <h3><i class="fa fa-angle-right"></i> Liste des Pièces Justificatives</h3>
+        <div class="row mt">
+          <div class="col-lg-12">
+                <table class="table table-bordered table-striped table-condensed cf">
+                  <thead class="cf">
+                    <tr>
+                      <th>N° <i class="fa fa-chevron-down"></i></th>
+                      <th>Libellé <i class="fa fa-chevron-down"></i></th>
+                      <th>Description <i class="fa fa-chevron-down"></i></th>
+                      <th>Téléchargement <i class="fa fa-chevron-down"></i></th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-title="N° ">1</td>
+                      <td data-title="Libellé">Note de présentation</td>
+                      <td data-title="Description">Note de présentation</td>
+                      <td data-title="Téléchargement">
+                        <button class="btn btn-success btn-xs"><i class="fa fa-check"></i> Effectué</button>
+                      </td>
+                      <td data-title="Actions">
+                        <button type="button" class="btn btn-primary btn-xs"><i class="fa fa-download"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-title="N° ">2</td>
+                      <td data-title="Libellé">Lettre de demande d'autorisation d'engagement</td>
+                      <td data-title="Description">Lettre de demande d'autorisation d'engagement</td>
+                      <td data-title="Téléchargement">
+                        <button class="btn btn-success btn-xs"><i class="fa fa-check"></i> Effectué</button>
+                      </td>
+                      <td data-title="Actions">
+                        <button type="button" class="btn btn-primary btn-xs"><i class="fa fa-download"></i></button>
+                      </td>
+                    </tr>               
+                  </tbody>
+                </table>
+          </div>
+          <!-- /col-lg-12 -->
         </div>
-        <!-- page end-->
+        <div class="row mt">
+          <center>
+            <a href="engagement_liste">
+              <button type="button" class="btn btn-danger">Retour</button>
+            </a>
+          </center>
+        </div>
       </section>
+      <!-- /wrapper -->
+
     </section>
     <!-- /MAIN CONTENT -->
     <!--main content end-->
-    <!--footer start-->
-    <footer class="site-footer">
-      <div class="text-center">
-        <div class="credits">
-        <p>
-          Ministère de l'Economie et des Finances - 2022 <br>
-          &copy; Direction Générale des Finances et des Affaires Générales
-        </p>
-        </div>
-      </div>
-    </footer>
-    <!--footer end-->
+
   </section>
-  <!-- js placed at the end of the document so the pages load faster -->
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.min.js"></script>
   <script class="include" type="text/javascript" src="lib/jquery.dcjqaccordion.2.7.js"></script>
@@ -139,9 +153,7 @@
   <script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
   <script src="lib/raphael/raphael.min.js"></script>
   <script src="lib/morris/morris.min.js"></script>
-  <!--common script for all pages-->
   <script src="lib/common-scripts.js"></script>
-  <!--script for this page-->
   <script src="lib/morris-conf.js"></script>
 </body>
 

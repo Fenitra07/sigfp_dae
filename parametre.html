@@ -27,6 +27,18 @@
       <!--logo start-->
       <a href="index.html" class="logo"><b>SIGFP<span>/DAE</span></b></a>
       <!--logo end-->
+      <!--  notification start -->
+      <div class="nav notify-row" id="top_menu">
+        <ul class="nav top-menu">
+          <li id="header_notification_bar" class="dropdown">
+            <a href="engagement_liste.html">
+              <i class="fa fa-bell-o"></i>
+              <span class="badge bg-warning">4</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--  notification end -->
       <div class="top-menu">
         <ul class="nav pull-right top-menu">
           <li><a class="logout" href="login.html"><i class="fa fa-power-off">  Déconnexion</i></a></li>
@@ -45,26 +57,26 @@
 
           <li class="mt">
             <a href="index.html">
-              <i class="fa fa-book"></i>
+              <i class="fa fa-dashboard"></i>
               <span>Tableau de bord</span>
               </a>
           </li>
           <li class="">
             <a class="" href="engagement_liste.html">
-              <i class="fa fa-book"></i>
+              <i class="fa fa-th-list"></i>
               <span>Listes autorisations</span>
-              </a>
-          </li>
-          <li class="">
-            <a class="active" href="referentiel.html">
-              <i class="fa fa-book"></i>
-              <span>Référentiel</span>
               </a>
           </li>
           <li>
             <a href="circulaire.html">
               <i class="fa fa-file-text-o"></i>
               <span>Circulaires et manuel</span>
+              </a>
+          </li>
+          <li class="">
+            <a class="active" href="parametre.html">
+              <i class="fa fa-cog"></i>
+              <span>Paramètres du compte</span>
               </a>
           </li>
         </ul>
@@ -78,13 +90,51 @@
     <!--main content start-->
     <section id="main-content">
       <section class="wrapper site-min-height">
-        <h3><i class="fa fa-angle-right"></i> Réferentiels</h3>
+        <h3><i class="fa fa-angle-right"></i> Paramètres</h3>
         <div class="row mt">
-          <div class="col-lg-12">
-            <p>Page en cours</p>
+          <div class="col-lg-6">
+              <h4 class="mb"><i class="fa fa-angle-right"></i> Informations personnelles</h4>
+              <form class="form-inline" role="form">
+                <div class="form-group">
+                  <input type="" class="form-control" id="" placeholder="Votre login">
+                  <input type="" class="form-control" id="" placeholder="Votre Nom">
+                  <input type="" class="form-control" id="" placeholder="Votre Prénom">
+                  <input type="" class="form-control" id="" placeholder="Votre mail">
+                  <input type="" class="form-control" id="" placeholder="Votre téléphone">
+                </div>
+              </form>
           </div>
+          <div class="col-lg-6">
+              <h4 class="mb"><i class="fa fa-angle-right"></i> Modifier mot de passe</h4>
+              <form class="form-inline" role="form">
+                <div class="form-group">
+                  <input type="" class="form-control" id="" placeholder="Ancien mot de passe">
+                  <input type="" class="form-control" id="" placeholder="Nouveau mot de passe">                  
+                </div>
+              </form>
+          </div>
+
+          <div class="col-lg-6 mt">
+              <h4 class="mb"><i class="fa fa-angle-right"></i> Code vérification : </h4>
+              <form class="form-inline" role="form">
+                <div class="form-group">
+                  <label></label>
+                  <input type="radio" name="choix"> Mail
+                  <input type="radio" name="choix"> SMS
+                  <input type="radio" name="choix"> Désactiver                 
+                </div>
+              </form>
+          </div>
+
         </div>
+        <div class="row mt">
+          <center>
+            <button class="btn btn-success"><i class="fa fa-floppy-o"></i> Enregistrer les modifications</button>
+          </center>
+        </div>
+        
       </section>
+
       <!-- /wrapper -->
     </section>
     <!-- /MAIN CONTENT -->

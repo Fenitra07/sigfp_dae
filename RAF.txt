@@ -1,9 +1,3 @@
-favicon
-esorina daholo le balises meta
-esorina le eo am styles
-esorina le signature
-
-image fond login 
 
 Bleu gras : #01252e
 ancien Bleu ciel : #48bcb4
@@ -18,6 +12,8 @@ gris clair : #d8d7d7
 login.html ---------- OK
 index.html ---------- OK (tableau de bord)
 engagement_liste.html - OK
-engagement_detail.html - 
-referentiel.html ---- OK
-circulaire.html ----- OK
+engagement_detail.html - OK
+engagement_piece.html -- OK 
+engagement_visa.html -- OK
+parametre.html ---- OK
+circulaire.html ----- 

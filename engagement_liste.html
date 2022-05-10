@@ -24,6 +24,18 @@
       <!--logo start-->
       <a href="index.html" class="logo"><b>SIGFP<span>/DAE</span></b></a>
       <!--logo end-->
+      <!--  notification start -->
+      <div class="nav notify-row" id="top_menu">
+        <ul class="nav top-menu">
+          <li id="header_notification_bar" class="dropdown">
+            <a href="engagement_liste.html">
+              <i class="fa fa-bell-o"></i>
+              <span class="badge bg-warning">4</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--  notification end -->
       <div class="top-menu">
         <ul class="nav pull-right top-menu">
           <li><a class="logout" href="login.html"><i class="fa fa-power-off">  Déconnexion</i></a></li>
@@ -38,26 +50,26 @@
 
           <li class="mt">
             <a href="index.html">
-              <i class="fa fa-book"></i>
+              <i class="fa fa-dashboard"></i>
               <span>Tableau de bord</span>
               </a>
           </li>
           <li class="">
             <a class="active" href="engagement_liste.html">
-              <i class="fa fa-book"></i>
+              <i class="fa fa-th-list"></i>
               <span>Listes autorisations</span>
-              </a>
-          </li>
-          <li class="">
-            <a class="" href="referentiel.html">
-              <i class="fa fa-book"></i>
-              <span>Référentiel</span>
               </a>
           </li>
           <li>
             <a href="circulaire.html">
               <i class="fa fa-file-text-o"></i>
               <span>Circulaires et manuel</span>
+              </a>
+          </li>
+          <li class="">
+            <a class="" href="parametre.html">
+              <i class="fa fa-cog"></i>
+              <span>Paramètres du compte</span>
               </a>
           </li>
         </ul>
@@ -129,13 +141,8 @@
                     <tr>
                       <th>Ministere <i class="fa fa-chevron-down"></i></th>
                       <th>Objet <i class="fa fa-chevron-down"></i></th>
-                      <th>Réf <i class="fa fa-chevron-down"></i></th>
-                      <th>Type <i class="fa fa-chevron-down"></i></th>
-                      <th>Date <i class="fa fa-chevron-down"></i></th>
                       <th>Montant <i class="fa fa-chevron-down"></i></th>
-                      <th>Visa PM <i class="fa fa-chevron-down"></i></th>
                       <th>Etat PM <i class="fa fa-chevron-down"></i></th>
-                      <th>Visa PRM <i class="fa fa-chevron-down"></i></th>
                       <th>Etat PRM <i class="fa fa-chevron-down"></i></th>
                       <th>Etat OrdSec <i class="fa fa-chevron-down"></i></th>
                       <th>Actions</th>
@@ -145,16 +152,10 @@
                     <tr>
                       <td data-title="Ministere">MINISTERE DE L'ECONOMIE ET DES FINANCES</td>
                       <td data-title="Objet">Amenagement BATIMENT</td>
-                      <td data-title="Numero">524</td>
-                      <td data-title="Réf">DAE3</td>
-                      <td data-title="Type">DAE + 200 Millions</td>
-                      <td data-title="Date">27/04/2022</td>
                       <td data-title="Montant">40,500,000,000.00</td>
-                      <td data-title="Visa PM">000022/2021/PM du 22/03/2022</td>
                       <td data-title="Etat PM">
                         <button class="btn btn-success btn-xs"><i class="fa fa-check"></i> Visé</button>
                       </td>
-                      <td data-title="Visa PRM">000012/2021/PRM du 22/03/2022</td>
                       <td data-title="Etat PRM">
                         <button class="btn btn-success btn-xs"><i class="fa fa-check"></i> Visé</button>
                       </td>
@@ -165,23 +166,23 @@
                         <a href="engagement_detail.html">
                           <button type="button" class="btn btn-info btn-xs"><i class="fa fa-eye"></i> Voir Détails</button>
                         </a>
-                      
-                        <button type="button" class="btn btn-primary btn-xs"><i class="fa fa-download"></i> Pièces justificatives</button>
+
+                        <a href="engagement_piece.html">
+                          <button type="button" class="btn btn-primary btn-xs"><i class="fa fa-download"></i> Pièces justificatives</button>
+                        </a>
+
+                        <a href="engagement_visa.html">
+                          <button type="button" class="btn btn-success btn-xs"><i class="fa fa-edit"></i> Traiter</button>
+                        </a>
                       </td>
                     </tr>
                     <tr>
                       <td data-title="Ministere">MINISTERE DE LA SANTE</td>
                       <td data-title="Objet">Installation CHU</td>
-                      <td data-title="Numero">524</td>
-                      <td data-title="Réf">DAE3</td>
-                      <td data-title="Type">DAE + 200 Millions</td>
-                      <td data-title="Date">27/04/2022</td>
                       <td data-title="Montant">1,500,000,000.00</td>
-                      <td data-title="Visa PM">000022/2021/PM du 22/03/2022</td>
                       <td data-title="Etat PM">
                         <button class="btn btn-warning btn-xs"><i class="fa fa-check"></i> En cours</button>
                       </td>
-                      <td data-title="Visa PRM">000012/2021/PRM du 22/03/2022</td>
                       <td data-title="Etat PRM">
                         <button class="btn btn-warning btn-xs"><i class="fa fa-check"></i> En cours</button>
                       </td>
@@ -193,22 +194,22 @@
                           <button type="button" class="btn btn-info btn-xs"><i class="fa fa-eye"></i> Voir Détails</button>
                         </a>
                       
-                        <button type="button" class="btn btn-primary btn-xs"><i class="fa fa-download"></i> Pièces justificatives</button>
+                        <a href="engagement_piece.html">
+                          <button type="button" class="btn btn-primary btn-xs"><i class="fa fa-download"></i> Pièces justificatives</button>
+                        </a>
+
+                        <a href="engagement_visa.html">
+                          <button type="button" class="btn btn-success btn-xs"><i class="fa fa-edit"></i> Traiter</button>
+                        </a>
                       </td>
                     </tr>
                     <tr>
                       <td data-title="Ministere">MINISTERE DE L'ENVIRONNEMENT</td>
                       <td data-title="Objet">Amenagement BATIMENT</td>
-                      <td data-title="Numero">524</td>
-                      <td data-title="Réf">DAE3</td>
-                      <td data-title="Type">DAE + 200 Millions</td>
-                      <td data-title="Date">27/04/2022</td>
                       <td data-title="Montant">6,500,000,000.00</td>
-                      <td data-title="Visa PM">000022/2021/PM du 22/03/2022</td>
                       <td data-title="Etat PM">
                         <button class="btn btn-danger btn-xs"><i class="fa fa-check"></i> Rejeté</button>
                       </td>
-                      <td data-title="Visa PRM">000012/2021/PRM du 22/03/2022</td>
                       <td data-title="Etat PRM">
                         <button class="btn btn-danger btn-xs"><i class="fa fa-check"></i> Rejeté</button>
                       </td>
@@ -220,11 +221,20 @@
                           <button type="button" class="btn btn-info btn-xs"><i class="fa fa-eye"></i> Voir Détails</button>
                         </a>
                       
-                        <button type="button" class="btn btn-primary btn-xs"><i class="fa fa-download"></i> Pièces justificatives</button>
+                        <a href="engagement_piece.html">
+                          <button type="button" class="btn btn-primary btn-xs"><i class="fa fa-download"></i> Pièces justificatives</button>
+                        </a>
+
+                        <a href="engagement_visa.html">
+                          <button type="button" class="btn btn-success btn-xs"><i class="fa fa-edit"></i> Traiter</button>
+                        </a>
                       </td>
                     </tr>
                   </tbody>
                 </table>
+                <center>
+                  <button class="btn"><i class="fa fa-chevron-down"></i> Voir plus</button>
+                </center>
               </section>
               <div class="btn-group">
                 <button type="button" class="btn btn-theme03">Imprimer Etat</button>
